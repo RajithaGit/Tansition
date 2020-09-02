@@ -1,0 +1,125 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+.topNav {
+    display: flex; 
+}
+.navLeft {
+    display: flex;
+    justify-content: flex-start;  
+    flex-grow:3;
+}
+.navRight {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 10px 0 20px;
+}
+.headerLinks {
+    vertical-align: top; 
+    margin: 10px 15px;
+    text-decoration: none;
+    color: rgb(95, 93, 93);
+    font-weight: 550;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.headerLinks:active {
+    color: #4285f4;
+    border-bottom: 2px solid #4285f4;
+    padding-bottom: 5px; 
+    border-bottom-style: solid; 
+    border-bottom-width: 3.1px; 
+    width: fit-content;     
+}
+.i-size {
+    height: 1.3em;
+    padding: 10px 0 0 15px;
+}
+.b-format {
+    background-color: chocolate;
+    border: none;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: inline-block;
+}
+.textArea {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logoArea {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.googleLogo {
+    width: 200px;
+    height: 70px;
+    padding-bottom: 5px;
+}
+.buttonArea {
+    display: flex;
+    justify-content: space-evenly;
+    width: 65%;
+    height: 30px;
+    padding: 14px;
+}
+.txt-submit {
+    width: 90%;
+    height: 22px;
+    text-align: left;
+    text-indent: 8%;
+    font-size: 18px;
+    border-radius: 15px;
+    border-color: rgb(211, 207, 207);
+    background-image: url("searchicon.jpeg");
+    background-repeat: no-repeat;
+    background-size: 24px 26px;
+    background-position: left;
+    padding: 12px 12px;
+    margin: auto;
+}
+.button-fmt {
+    font-size: 16px;
+    font-weight: 550;
+    padding: 0 10px 0 10px;
+}
+.bottomNav {
+    display:flex;
+    flex-direction: column;    
+    background-color: lightgrey;
+    height: 60px;
+    width: 100%;
+    padding: 0;
+}
+.firstNavLinks {
+    display: flex;
+    justify-content: center;
+}
+.secondNavLinks {
+    display: flex;
+    justify-content: center;
+}
+.bottomLinks {
+    font-size: 18px;
+    padding: 3px 10px 3px 10px;
+    text-decoration: none;
+    color: rgb(85, 82, 82);
+    font-weight: 500;
+}

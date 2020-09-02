@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./google_list.css" media="only screen and (max-width: 480px)" />
+    <link rel="stylesheet" type="text/css" href="./google_desktop.css" media="screen and (min-width: 481px)" />
+    <script src="./google.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <nav class="topNav">
+            <ul class="navLeft">
+                <li><img class="i-size" src="./hamburger.png" alt="menu"></li>
+                <li><a class="headerLinks" aria-label="All Link" href="https://www.google.com/">All</a></li>
+                <li><a class="headerLinks" aria-label="Images Link"
+                        href="https://www.google.com/imghp?hl=en&tab=ri&ogbl">Images</a></li>
+            </ul>
+            <ul class="navRight">
+                <li><img class="i-size" aria-label="All Applications" src="./appsIcon.png" alt="All Apps"></li>
+                <li></li><button class="headerLinks b-format" aria-label="User Initial" type="submit"
+                    id="signIn">R</button></li>
+            </ul>
+        </nav>
+        <div class="textArea">
+            <div class="logoArea">
+                <img src="./googlelogo.png" aria-label="Google Logo" class="googleLogo" alt="Google">
+                <input class="txt-submit" aria-label="Search Google" type="text" id="search" name="search">
+            </div>
+            <div class="buttonArea">
+                <button onclick="buttonClick('googlesearch')" class="button-fmt" id="googlesearch">Search</button>
+                <button onclick="buttonClick('lucky')" class="button-fmt" type="submit" id="lucky">I'm feeling
+                    lucky</button>
+            </div>
+        </div>
+        <nav class="bottomNav">
+            <ul class="firstNavLinks">
+                <li><a class="bottomLinks" aria-label="Settings Link"
+                        href="https://www.google.com/preferences?hl=en">Settings</a></li>
+                <li><a class="bottomLinks" aria-label="Privacy Link"
+                        href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a></li>
+                <li><a class="bottomLinks" aria-label="Terms Link"
+                        href="https://policies.google.com/terms?hl=en&fg=1">Terms</a></li>
+            </ul>
+            <ul class="secondNavLinks">
+                <li><a class="bottomLinks" aria-label="Advertising Link"
+                        href="https://ads.google.com/home/?pli=1">Advertising</a></li>
+                <li><a class="bottomLinks" aria-label="Business Link"
+                        href="https://smallbusiness.withgoogle.com/#!/">Business</a></li>
+                <li><a class="bottomLinks" aria-label="About Google Link" href="https://about.google/">About</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
