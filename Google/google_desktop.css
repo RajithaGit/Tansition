@@ -1,45 +1,51 @@
-.main {
+body {
+    padding: 0;
+    margin: 0;
+  }
+  .main {
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;    
-}
-.topNav {
-    display: flex; 
-}
-.navLeft {
+    justify-content: space-between;
+    background: url("ocean.jpeg") center no-repeat;
+    background-size: cover;
+  }
+  .topNav {
     display: flex;
-    list-style-type:none;
-    padding: 5px 0 0 30px;
-
-}
-.navRight {
+    justify-content: space-between;
+  }
+  .navLeft {
     display: flex;
-    list-style-type:none;
-    padding: 5px 5px 0 540px;
-}
-.headerLinks {
+    list-style-type: none;
+    padding: 5px 0 0 10px;
+  }
+  .navRight {
+    display: flex;
+    list-style-type: none;
+    padding: 5px 5px 0 140px;
+  }
+  .headerLinks {
     margin: 10px 10px 0 10px;
     text-decoration: none;
-    color: rgb(95, 93, 93);
+    color: rgb(19, 15, 15);
     font-weight: 550;
-    font-size: 16px;
+    font-size: 18px;
     text-transform: uppercase;
-}
-.headerLinks:active {
+  }
+  .headerLinks:active {
     color: #4285f4;
     border-bottom: 2px solid #4285f4;
-    padding-bottom: 5px; 
-    border-bottom-style: solid; 
-    border-bottom-width: 3.1px; 
-    width: fit-content;     
-}
-.i-size {
-    height: 1.3em;
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 3.1px;
+    width: fit-content;
+  }
+  .i-size {
+    height: 1.4em;
     padding: 0;
-}
-.b-format {
+  }
+  .b-format {
     background-color: chocolate;
     border: none;
     color: white;
@@ -48,82 +54,78 @@
     font-size: 14px;
     border-radius: 50%;
     text-decoration: none;
-    margin: 0 15px;
-}
-.textArea {
+    margin: 0 5px;
+  }
+  .textArea {
     height: 350px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-}
-.logoArea {
+  }
+  .logoArea {
     height: 120px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.googleLogo {
+  }
+  .googleLogo {
     width: 200px;
     height: 70px;
     padding-bottom: 5px;
-}
-.buttonArea {
-    Justify-content: center;
+  }
+  .buttonArea {
     display: flex;
-    width: 75%;
+    justify-content: center;
+    width: 65%;
     height: 30px;
-    padding: 15px;
-}
-.txt-submit {
-    width: 40%;
-    height: 24px;
+    padding: 25px;
+  }
+  .txt-submit {
+    width: 30%;
+    height: 22px;
     text-align: left;
     text-indent: 8%;
     font-size: 18px;
     border-radius: 15px;
-    border-color: gray;
+    border-color: rgb(211, 207, 207);
     background-image: url("searchicon.jpeg");
     background-repeat: no-repeat;
     background-size: 24px 26px;
     background-position: left;
     padding: 12px 12px;
     margin: auto;
-}
-.button-fmt {
+  }
+  .button-fmt {
     font-size: 16px;
     font-weight: 550;
-    padding: 0 10px 0 10px;
-    margin: 0 7px 0 7px;
-}
-.bottomNav {
-    display:flex;
-    flex-direction: column;    
-    justify-content: space-evenly; 
+    padding: 0 30px 0 30px;
+    margin: 0 15px 0 15px;
+  }
+  .bottomNav {
+    display: flex;
     background-color: lightgrey;
-    height: 80px;
+    height: 50px;
     width: 100%;
     margin-bottom: 0;
-}
-.firstNavLinks {
+  }
+  .firstNavLinks {
     display: flex;
-    justify-content: center;
-    list-style-type:none;
+    list-style-type: none;
     padding: 20px 0 3px 0;
-    margin: 0 0 0 3px;
-}
-.secondNavLinks {
+    margin: 0 35% 0 1%;
+  }
+  .secondNavLinks {
     display: flex;
-    justify-content: center;
-    list-style-type:none;
-    padding: 3px 0 20px 0;
-    margin: 3px 0 0 3px;
-}
-.bottomLinks {
-    font-size: 18px;
+    list-style-type: none;
+    padding: 20px 0 3px 0;
+    margin: 0 1% 0 35%;
+  }
+  .bottomLinks {
+    font-size: 16px;
     padding: 0 12px 0 8px;
     text-decoration: none;
     color: rgb(75, 71, 71);
     font-weight: 500;
-}
+  }
+  
