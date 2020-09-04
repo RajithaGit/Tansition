@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ToDo</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="todo.css">
+    <script src="todo.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header" id="header" aria-label="Header">
+            <span class="txt-header">My ToDo App</span>
+        </div>
+        <button onclick="toDoForm('open')" id="form">Click to Add new Task</button>
+
+        <div id="displayForm" class="modal">
+            <form class="modal-content animate">
+                <div class="container">
+                    <label><b>Priority</b></label>
+                    <select name="priority" id="priority">
+                        <option value="p1">P1</option>
+                        <option value="p2">P2</option>
+                        <option value="p3">P3</option>
+                    </select>
+
+                    <label><b>ToDo</b></label>
+                    <input type="text" placeholder="Enter ToDo Task" name="todo" required>
+                    <label><b>Description</b></label>
+                    <input type="text" placeholder="Description" name="description">
+
+                    <label><b>End Date</b></label>
+                    <input type="text" placeholder="End Date" name="end-date" required>
+                    <div class="clearfix">
+                        <button type="button" onclick="toDoForm('cancel')" class="cancelbtn">Cancel</button>
+                        <button onclick="addRow('todotable')" type="submit" class="addToDo">Add</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+            <span>Todo List</span>
+        </div>
+        <table width=80% border="1" cellpadding="5" style="text-align: center" id="todotable">
+            <tr id=0>
+                <th width=10%><strong>Select</strong></th>
+                <th width=7%>Priority</th>
+                <th width=40%>ToDo</th>
+                <th width=12%>End Date</th>
+                <th width=8%>Status</th>
+                <th width=7%>Delete</th>
+            </tr>
+            <tr id=1>
+                <td><input type="checkbox" id="task" name="task">
+                    <label for="task">Complete</label></td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td><button onclick="deleteRow('todotable', id)" class="btn-delete" aria-label="Delete" id=1
+                        type="submit"><img src="delete.png" /></button></td>
+            <tr id=2>
+                <td><input type="checkbox" id="task" name="task">
+                    <label for="task">Complete</label></td>
+                <td>hello1</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td><button onclick="deleteRow('todotable', id)" class="btn-delete" aria-label="Delete" id=2
+                        type="submit"><img src="delete.png" /></button></td>
+            </tr>
+            <tr id=3>
+                <td><input type="checkbox" id="task" name="task">
+                    <label for="task">Complete</label></td>
+                <td>hello2</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td><button onclick="deleteRow('todotable', id)" class="btn-delete" aria-label="Delete" id=3
+                        type="submit"><img src="delete.png" /></button></td>
+            </tr>
+            <tr id=4>
+                <td><input type="checkbox" id="task" name="task">
+                    <label for="task">Complete</label></td>
+                <td>hello3</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td>hello</td>
+                <td><button onclick="deleteRow('todotable', id)" class="btn-delete" aria-label="Delete" id=4
+                        type="submit"><img src="delete.png" /></button></td>
+            </tr>
+        </table>
+        <div>
+            <button onclick="deleteAll('todotable')" class="btn-deleteAll" aria-label="Delete" type="submit"
+                id="edit">Delete All</button>
+        </div>
+    </div>
+</body>
+
+</html>
