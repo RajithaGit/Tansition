@@ -43,12 +43,10 @@ function addRow(tableID) {
   cell4.appendChild(element4);
 
   let cell5 = row.insertCell(5);
-  let element5 = document.createElement("button");
-  element5.type = "button";
-  element5.innerText = "Delete";
-  element5.id = rowCount + 1;
-  element5.onclick = `deleteRow(${tableID}, ${element5.id})`;
-  cell5.appendChild(element5);
+  let id = rowCount + 1;
+  let inputTag = document.createElement("div"); 
+  inputTag.innerHTML = "<button onClick = \"deleteRow('"+tableID+"',id)\" id=" + id + ">Delete";    
+  cell5.appendChild(inputTag);  
 }
 
 function deleteRow(tableID, rowID) {
