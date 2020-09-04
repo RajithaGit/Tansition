@@ -28,15 +28,14 @@
                     </select>
 
                     <label><b>ToDo</b></label>
-                    <input type="text" placeholder="Enter ToDo Task" name="todo" required>
-                    <label><b>Description</b></label>
-                    <input type="text" placeholder="Description" name="description">
-
+                    <input type="text" placeholder="Enter ToDo Task" name="todo" id="toDoText">
+                    <!-- <label><b>Description</b></label>
+                    <input type="text" placeholder="Description" name="description" id="toDoDesc"> -->
                     <label><b>End Date</b></label>
-                    <input type="text" placeholder="End Date" name="end-date" required>
+                    <input type="text" placeholder="End Date" name="end-date" id=date>
                     <div class="clearfix">
                         <button type="button" onclick="toDoForm('cancel')" class="cancelbtn">Cancel</button>
-                        <button onclick="addRow('todotable')" type="submit" class="addToDo">Add</button>
+                        <button onclick="addRow('todotable')" type="button" class="addToDo">Add</button>
                     </div>
                 </div>
             </form>
@@ -46,14 +45,14 @@
         </div>
         <table width=80% border="1" cellpadding="5" style="text-align: center" id="todotable">
             <tr id=0>
-                <th width=10%><strong>Select</strong></th>
-                <th width=7%>Priority</th>
+                <th width=15%><strong>Select</strong></th>
+                <th width=5%>Priority</th>
                 <th width=40%>ToDo</th>
                 <th width=12%>End Date</th>
                 <th width=8%>Status</th>
                 <th width=7%>Delete</th>
             </tr>
-            <tr id=1>
+            <!-- <tr id=1>
                 <td><input type="checkbox" id="task" name="task">
                     <label for="task">Complete</label></td>
                 <td>hello</td>
@@ -62,6 +61,7 @@
                 <td>hello</td>
                 <td><button onclick="deleteRow('todotable', id)" class="btn-delete" aria-label="Delete" id=1
                         type="submit"><img src="delete.png" /></button></td>
+            </tr>
             <tr id=2>
                 <td><input type="checkbox" id="task" name="task">
                     <label for="task">Complete</label></td>
@@ -91,7 +91,7 @@
                 <td>hello</td>
                 <td><button onclick="deleteRow('todotable', id)" class="btn-delete" aria-label="Delete" id=4
                         type="submit"><img src="delete.png" /></button></td>
-            </tr>
+            </tr> -->
         </table>
         <div>
             <button onclick="deleteAll('todotable')" class="btn-deleteAll" aria-label="Delete" type="submit"
