@@ -1,68 +1,156 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
 .main {
+  padding: 0;
+  margin: 0;
   height: 100vh;
   width: 100vw;
   background: url("mtv1.jpeg") no-repeat;
   display: flex;
   flex-direction: column;
+  border: 1px solid black;
 }
 .header {
-  height: 25%;
+  height: 15%;
   width: 100vw;
-  background: linear-gradient(rgb(198, 211, 153), #9198e5);
+  background: linear-gradient(rgb(178, 206, 75), #777eca);
   position: relative;
 }
 .txt-header {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-style: italic;
-  padding: 2% 0 0 40%;
+  font-family: fantasy;
+  padding: 2% 40% 2% 40%;
   position: absolute;
 }
-.new-task-btn {
-   width: 100vw;
-   height: 15%;
-   font-size: 40px;
-   padding: 2% 0 0 40%;
+.new-taskbtn-area {
+  width: 100vw;
+  height: 10%;
+  padding: 3% 40% 0 40%;
+}
+.new-taskbtn {
+  height: 55%;
+  background: linear-gradient(rgb(245, 183, 125), #b591e5);
+  font-size: 18px;
+  font-family: fantasy;
+  font-style: italic;
+  border-radius: 10%;
+  padding: 6px;
 }
 .modal {
-  flex-grow: 3;
+   height: 15%;
+   width: 100vw;
+   flex: display;
+   justify-content: space-between;
+   align-items: space-between;
 }
-.btn-taskSubmit {
-  width: 40px;
-  height: 25px;
+.container {
+   height: 15%;
+   width: 100vw;
 }
-.rTable {
-  display: block;
-  width: 100%;
+.pr-dpdn {
+   width: 3%;
+   height: 25px;
+   padding-left: 0.5%;
+   background-color: rgb(224, 206, 121);
+   border-radius: 10%;
 }
-.rTableHeading,
-.rTableBody,
-.rTableFoot,
-.rTableRow {
-  clear: both;
+.tsk-txt {
+   width: 40%;
+   height: 25px;
+   padding-left: 0.5%;
+   background-color: rgb(224, 206, 121);
+   font-style: italic;
+   border-radius: 8%;
 }
-.rTableHead,
-.rTableFoot {
-  background-color: #ddd;
-  font-weight: bold;
-  width: 30px;
+.tsk-dt {
+   width: 10%;
+   height: 25px;
+   padding-left: 0.5%;
+   background-color: rgb(224, 206, 121);
+   font-style: italic;
+   border-radius: 10%;
 }
-.rTableCell,
-.rTableHead {
-  border: 1px solid #999999;
-  float: left;
-  height: 30px;
-  overflow: hidden;
-  padding: 3px 1.8%;
-  width: 10%;
+.lbl {
+   font-family: fantasy;
+   font-style: italic;
+   font-size: 18px;
+   font-weight: 600;
+   padding: 0 1% 0 4%;
 }
-.rTable:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
+.cancel-add-btn-area{
+   padding: 1.5% 0 0 40%;
+}
+.cancel-add-btns {
+   height: 2%;
+   width: 7%;
+   font-family: fantasy;
+   font-style: italic;
+   font-weight: 700;
+   font-size: 16px;
+   background: linear-gradient(rgb(224, 122, 48), rgb(167, 240, 160));
+   border-radius: 10%;
+   text-align: center;
+   padding-top: 0.3%;
+}
+.todo-txt {
+   height: 35px;
+   font-size: 25px;
+   font-family: fantasy;
+   font-style: italic;
+   font-weight: 700;
+   margin: 0 0 0 2%;
 }
 .modal {
   display: none;
+}
+.todo-table {
+   width: 80%;
+   margin: 0 8% 0 2%;
+}
+.todo-delete-all {
+   width: 80%;
+   height: 20px;
+}
+.btn-deleteAll {
+   width: 15%;
+   height: 35px;
+   margin: 1% 8% 0 50%;
+   font-family: fantasy;
+   font-style: italic;
+   font-weight: 700;
+   font-size: 16px;
+   background: linear-gradient(rgb(121, 160, 243), rgb(241, 100, 95));
+   border-radius: 11%;
+   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .new-taskbtn-area {
+    padding: 4% 25% 0 20%;
+  }
+  .new-taskbtn-area {
+    width: 100vw;
+    height: 6%;
+    padding: 4% 20% 0 25%;
+  }
+  .txt-header {
+    font-size: 1.7rem;
+    font-style: italic;
+    padding: 12% 20% 2% 28%;
+    position: absolute;
+  }
+  .modal {
+    height: 15%;
+    width: 100vw;
+  }
 }

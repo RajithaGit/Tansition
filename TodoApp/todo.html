@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ToDo</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="todo.css">
     <script src="todo.js"></script>
 </head>
@@ -13,39 +13,41 @@
 <body>
     <div class="main">
         <div class="header" id="header" aria-label="Header">
-            <span class="txt-header">My ToDo App</span>
+            <span class="txt-header">My ToDo List</span>
         </div>
-        <div class=new-task-btn>
-            <button onclick="toDoForm('open')" id="form">Click to Add new Task</button>
+        <div class="new-taskbtn-area">
+            <button class="new-taskbtn" onclick="toDoForm('open')" id="form">Click to add new task</button>
         </div>
         <div class="modal" id="displayForm">
-            <form class="modal-content animate">
+            <form class="modal-content">
                 <div class="container">
-                    <label><b>Priority</b></label>
-                    <select name="priority" id="priority">
+                    <label class="lbl">Priority :</label>
+                    <select class="pr-dpdn" name="priority" id="priority">
                         <option value="p1">P1</option>
                         <option value="p2">P2</option>
                         <option value="p3">P3</option>
                     </select>
 
-                    <label><b>ToDo</b></label>
-                    <input type="text" placeholder="Enter ToDo Task" name="todo" id="toDoText" />
-                    <label><b>End Date</b></label>
-                    <input type="date" placeholder="End Date" name="end-date" id="date" />
-                    <div class="cancel-add-btns">
-                        <button type="button" onclick="toDoForm('cancel')" class="cancelBtn">Cancel</button>
-                        <button onclick="addRow('toDoTable')" type="button" class="addToDo">Add</button>
-                    </div>
+                    <label class="lbl">ToDo :</label>
+                    <input class="tsk-txt" type="text" placeholder="Enter ToDo Task" name="todo" id="toDoText" />
+                    <label class="lbl">End Date :</label>
+                    <input class="tsk-dt" type="date" placeholder="End Date" name="end-date" id="date" />
                 </div>
+                <div class="cancel-add-btn-area">
+                    <button class="cancel-add-btns" type="button" onclick="toDoForm('cancel')" class="cancelBtn">Cancel</button>
+                    <button class="cancel-add-btns" onclick="addRow('toDoTable')" type="button" class="addToDo">Add</button>
+                </div>
+
             </form>
         </div>
         <div class="todo-content">
             <div class="todo-txt">
-                <span>Todo List</span>
+                <span>List of Todo Activities</span>
             </div>
             <div class="todo-table-content">
-                <table class="todo-table" width=80% border="1" cellpadding="5" style="text-align: center" id="toDoTable">
-                    <tr id=0>
+                <table class="todo-table" width=80% border="1" cellpadding="5" style="text-align: center"
+                    id="toDoTable">
+                    <tr>
                         <th width=15%><strong>Select</strong></th>
                         <th width=5%>Priority</th>
                         <th width=40%>ToDo</th>
