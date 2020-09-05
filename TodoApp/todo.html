@@ -15,9 +15,10 @@
         <div class="header" id="header" aria-label="Header">
             <span class="txt-header">My ToDo App</span>
         </div>
-        <button onclick="toDoForm('open')" id="form">Click to Add new Task</button>
-
-        <div id="displayForm" class="modal">
+        <div class=new-task-btn>
+            <button onclick="toDoForm('open')" id="form">Click to Add new Task</button>
+        </div>
+        <div class="modal" id="displayForm">
             <form class="modal-content animate">
                 <div class="container">
                     <label><b>Priority</b></label>
@@ -28,74 +29,36 @@
                     </select>
 
                     <label><b>ToDo</b></label>
-                    <input type="text" placeholder="Enter ToDo Task" name="todo" id="toDoText">
-                    <!-- <label><b>Description</b></label>
-                    <input type="text" placeholder="Description" name="description" id="toDoDesc"> -->
+                    <input type="text" placeholder="Enter ToDo Task" name="todo" id="toDoText" />
                     <label><b>End Date</b></label>
-                    <input type="text" placeholder="End Date" name="end-date" id=date>
-                    <div class="clearfix">
-                        <button type="button" onclick="toDoForm('cancel')" class="cancelbtn">Cancel</button>
-                        <button onclick="addRow('todotable')" type="button" class="addToDo">Add</button>
+                    <input type="date" placeholder="End Date" name="end-date" id="date" />
+                    <div class="cancel-add-btns">
+                        <button type="button" onclick="toDoForm('cancel')" class="cancelBtn">Cancel</button>
+                        <button onclick="addRow('toDoTable')" type="button" class="addToDo">Add</button>
                     </div>
                 </div>
             </form>
         </div>
-        <div>
-            <span>Todo List</span>
-        </div>
-        <table width=80% border="1" cellpadding="5" style="text-align: center" id="todotable">
-            <tr id=0>
-                <th width=15%><strong>Select</strong></th>
-                <th width=5%>Priority</th>
-                <th width=40%>ToDo</th>
-                <th width=12%>End Date</th>
-                <th width=8%>Status</th>
-                <th width=7%>Delete</th>
-            </tr>
-            <!-- <tr id=1>
-                <td><input type="checkbox" id="task" name="task">
-                    <label for="task">Complete</label></td>
-                <td>hello</td>
-                <td>hello</td>
-                <td>hello</td>
-                <td>hello</td>
-                <td><button onclick="deleteRow('todotable', id)" class="btn-delete" aria-label="Delete" id=1
-                        type="submit"><img src="delete.png" /></button></td>
-            </tr>
-            <tr id=2>
-                <td><input type="checkbox" id="task" name="task">
-                    <label for="task">Complete</label></td>
-                <td>hello1</td>
-                <td>hello</td>
-                <td>hello</td>
-                <td>hello</td>
-                <td><button onclick="deleteRow('todotable', id)" class="btn-delete" aria-label="Delete" id=2
-                        type="submit"><img src="delete.png" /></button></td>
-            </tr>
-            <tr id=3>
-                <td><input type="checkbox" id="task" name="task">
-                    <label for="task">Complete</label></td>
-                <td>hello2</td>
-                <td>hello</td>
-                <td>hello</td>
-                <td>hello</td>
-                <td><button onclick="deleteRow('todotable', id)" class="btn-delete" aria-label="Delete" id=3
-                        type="submit"><img src="delete.png" /></button></td>
-            </tr>
-            <tr id=4>
-                <td><input type="checkbox" id="task" name="task">
-                    <label for="task">Complete</label></td>
-                <td>hello3</td>
-                <td>hello</td>
-                <td>hello</td>
-                <td>hello</td>
-                <td><button onclick="deleteRow('todotable', id)" class="btn-delete" aria-label="Delete" id=4
-                        type="submit"><img src="delete.png" /></button></td>
-            </tr> -->
-        </table>
-        <div>
-            <button onclick="deleteAll('todotable')" class="btn-deleteAll" aria-label="Delete" type="submit"
-                id="edit">Delete All</button>
+        <div class="todo-content">
+            <div class="todo-txt">
+                <span>Todo List</span>
+            </div>
+            <div class="todo-table-content">
+                <table class="todo-table" width=80% border="1" cellpadding="5" style="text-align: center" id="toDoTable">
+                    <tr id=0>
+                        <th width=15%><strong>Select</strong></th>
+                        <th width=5%>Priority</th>
+                        <th width=40%>ToDo</th>
+                        <th width=12%>End Date</th>
+                        <th width=8%>Status</th>
+                        <th width=7%>Delete</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="todo-delete-all">
+                <button class="btn-deleteAll" onclick="deleteAll('toDoTable')" aria-label="Delete" type="submit"
+                    id="edit">Delete All</button>
+            </div>
         </div>
     </div>
 </body>

@@ -1,40 +1,68 @@
 .main {
-    height: 100vh;
-    width: 100vw;
-    background: url("mtv1.jpeg") no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background: url("mtv1.jpeg") no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  height: 25%;
+  width: 100vw;
+  background: linear-gradient(rgb(198, 211, 153), #9198e5);
+  position: relative;
+}
+.txt-header {
+  font-size: 40px;
+  font-style: italic;
+  padding: 2% 0 0 40%;
+  position: absolute;
+}
+.new-task-btn {
+   width: 100vw;
+   height: 15%;
+   font-size: 40px;
+   padding: 2% 0 0 40%;
+}
+.modal {
+  flex-grow: 3;
 }
 .btn-taskSubmit {
-    width: 40px;
-    height: 25px;
+  width: 40px;
+  height: 25px;
 }
 .rTable {
-    display: block;
-    width: 100%;
- }
- .rTableHeading, .rTableBody, .rTableFoot, .rTableRow{
-    clear: both;
- }
- .rTableHead, .rTableFoot{
-    background-color: #DDD;
-    font-weight: bold;
-    width: 30px;
- }
- .rTableCell, .rTableHead {
-    border: 1px solid #999999;
-    float: left;
-    height: 30px;
-    overflow: hidden;
-    padding: 3px 1.8%;
-    width: 10%;
- }
- .rTable:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
- }
- .modal{
-    display: none;
- }
+  display: block;
+  width: 100%;
+}
+.rTableHeading,
+.rTableBody,
+.rTableFoot,
+.rTableRow {
+  clear: both;
+}
+.rTableHead,
+.rTableFoot {
+  background-color: #ddd;
+  font-weight: bold;
+  width: 30px;
+}
+.rTableCell,
+.rTableHead {
+  border: 1px solid #999999;
+  float: left;
+  height: 30px;
+  overflow: hidden;
+  padding: 3px 1.8%;
+  width: 10%;
+}
+.rTable:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.modal {
+  display: none;
+}
