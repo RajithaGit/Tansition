@@ -15,7 +15,7 @@ function addRow(tableID) {
   let cell = row.insertCell(0);
   let checkTag = document.createElement("div");
   checkTag.innerHTML =
-    '<input type="checkbox" onClick = "strikeOffToDo(\'toDo' +
+    '<input class="tcell" type="checkbox" onClick = "strikeOffToDo(\'toDo' +
     rowId +
     "','" +
     "status" +
@@ -29,6 +29,7 @@ function addRow(tableID) {
   let prioritySelection = document.getElementById("priority");
   let element1 = document.createElement("INPUT");
   element1.type = "text";
+  element1.className = "tcell";
   element1.value =
     prioritySelection.options[prioritySelection.selectedIndex].text;
   cell1.appendChild(element1);
@@ -36,6 +37,7 @@ function addRow(tableID) {
   let cell2 = row.insertCell(2);
   let element2 = document.createElement("input");
   element2.type = "text";
+  element2.className = "tcell t-todo";
   element2.value = document.getElementById("toDoText").value;
   element2.id = "toDo" + rowId;
   cell2.appendChild(element2);
@@ -44,6 +46,7 @@ function addRow(tableID) {
   let cell3 = row.insertCell(3);
   let element3 = document.createElement("input");
   element3.type = "text";
+  element3.className = "tcell";
   let dateValue = (document.getElementById("date").value).split('-');
   element3.value = dateValue == "" ? dateValue : dateValue[1]+"/"+dateValue[2]+"/"+dateValue[0];
   cell3.appendChild(element3);
@@ -52,6 +55,7 @@ function addRow(tableID) {
   let cell4 = row.insertCell(4);
   let element4 = document.createElement("input");
   element4.type = "text";
+  element4.className = "tcell";
   element4.value = "Pending";
   element4.id = "status" + rowId;
   cell4.appendChild(element4);

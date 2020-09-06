@@ -59,6 +59,9 @@
     padding-left: 0.5%;
     background-color: rgb(224, 206, 121);
     border-radius: 10%;
+    font-family: fantasy;
+    font-style: italic;
+    font-weight: 800;
   }
   .tsk-txt {
     width: 40%;
@@ -112,6 +115,19 @@
   .todo-table {
     width: 80%;
     margin: 0 8% 0 2%;
+  }
+  .th {
+    background: rgb(218, 226, 209);
+    font-style: italic;
+  }
+  .tcell {
+    border: none;
+    background: url("mtv1.jpeg") no-repeat;
+    font-style: italic;
+    font-size: 16px;
+  }
+  .t-todo {
+    width: 100%;
   }
   .btn-delete {
     border: none;
@@ -177,6 +193,7 @@
     border-radius: 10%;
     padding: 3px;
     margin-top: 7px;
+    margin-bottom: 2px;
   }
   .modal {
     height: 15%;
@@ -257,13 +274,27 @@
   }
   .todo-table-content {
     overflow-x: auto;
+    overflow-y: auto;
   }
   .todo-content {
-    margin: 12% 0 0 0;
+    margin: 16% 0 0 0;
   }
   .todo-table {
     width: 325px;
   }
+  .tcell {
+    border: none;
+    background: url("mtv1.jpeg") no-repeat;
+    font-style: italic;
+    font-size: 16px;
+  }
+  .t-todo {
+    width: 300px;
+  }
+  .th {
+   background: rgb(218, 226, 209);
+   font-style: italic;
+ }
   .btn-delete {
     border: none;
     background: none;
