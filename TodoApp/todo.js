@@ -45,7 +45,7 @@ function addRow(tableID) {
   let element3 = document.createElement("input");
   element3.type = "text";
   let dateValue = (document.getElementById("date").value).split('-');
-  element3.value = dateValue[1]+"/"+dateValue[2]+"/"+dateValue[0];
+  element3.value = dateValue == "" ? dateValue : dateValue[1]+"/"+dateValue[2]+"/"+dateValue[0];
   cell3.appendChild(element3);
   document.getElementById("date").value = "";
 
