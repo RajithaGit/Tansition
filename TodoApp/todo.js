@@ -22,7 +22,7 @@ function addRow(tableID) {
     rowId +
     "')\" id=" +
     rowId +
-    ' name="task"> <label for = "task">Complete</label>';
+    ' name="task"> <label for = "task"></label>';
   cell.appendChild(checkTag);
 
   let cell1 = row.insertCell(1);
@@ -59,7 +59,7 @@ function addRow(tableID) {
   let cell5 = row.insertCell(5);
   let inputTag = document.createElement("div");
   inputTag.innerHTML =
-    "<button onClick = \"deleteRow('" +
+    "<button class=\"btn-delete\" onClick = \"deleteRow('" +
     tableID +
     "',id)\" id=" +
     rowId +
