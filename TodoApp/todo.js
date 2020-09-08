@@ -15,7 +15,7 @@ function addRow(tableID) {
   let cell = row.insertCell(0);
   let checkTag = document.createElement("div");
   checkTag.innerHTML =
-    '<input class="tcell" type="checkbox" onClick = "strikeOffToDo(\'toDo' +
+    '<input aria-label=\"Tick Complete checkbox\" class="tcell" type="checkbox" onClick = "strikeOffToDo(\'toDo' +
     rowId +
     "','" +
     "status" +
@@ -63,7 +63,7 @@ function addRow(tableID) {
   let cell5 = row.insertCell(5);
   let inputTag = document.createElement("div");
   inputTag.innerHTML =
-    "<button class=\"btn-delete\" onClick = \"deleteRow('" +
+    "<button aria-label=\"Delete\" class=\"btn-delete\" onClick = \"deleteRow('" +
     tableID +
     "',id)\" id=" +
     rowId +

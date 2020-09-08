@@ -57,7 +57,7 @@
     width: 3%;
     height: 25px;
     padding-left: 0.5%;
-    background-color: rgb(224, 206, 121);
+    background-color: rgb(241, 227, 153);
     border-radius: 10%;
     font-family: fantasy;
     font-style: italic;
@@ -67,7 +67,7 @@
     width: 40%;
     height: 25px;
     padding-left: 0.5%;
-    background-color: rgb(224, 206, 121);
+    background-color:  rgb(241, 227, 153);
     font-style: italic;
     border-radius: 8%;
   }
@@ -75,7 +75,7 @@
     width: 10%;
     height: 25px;
     padding-left: 0.5%;
-    background-color: rgb(224, 206, 121);
+    background-color: rgb(241, 227, 153);
     font-style: italic;
     border-radius: 10%;
   }
