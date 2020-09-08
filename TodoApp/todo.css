@@ -16,7 +16,7 @@
     border: 1px solid black;
   }
   .header {
-    height: 15%;
+    height: 125px;
     width: 100vw;
     background: linear-gradient(rgb(178, 206, 75), #777eca);
     position: relative;
@@ -25,7 +25,7 @@
     font-size: 2.5rem;
     font-style: italic;
     font-family: fantasy;
-    padding: 2% 40% 2% 40%;
+    padding: 2% 30% 2% 40%;
     position: absolute;
   }
   .new-taskbtn-area {
@@ -151,6 +151,22 @@
     text-align: center;
   }
 }
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+   .header {
+      height: 125px;
+      width: 100vw;
+      background: linear-gradient(rgb(178, 206, 75), #777eca);
+      position: relative;
+    }
+    .txt-header {
+      font-size: 2.5rem;
+      font-style: italic;
+      font-family: fantasy;
+      padding: 4% 30% 2% 30%;
+      position: absolute;
+    }
+}
+
 @media screen and (max-width: 768px) {
   body {
     padding: 0;
