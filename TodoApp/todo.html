@@ -11,9 +11,9 @@
 </head>
 
 <body>
-    <div class="main">
+    <main class="main">
         <div class="header" id="header" aria-label="Header">
-            <span class="txt-header">My ToDo List</span>
+            <h1 class="txt-header">My ToDo List</h1>
         </div>
         <div class="new-taskbtn-area">
             <button class="new-taskbtn" onclick="toDoForm('open')" id="form">Click to add new task</button>
@@ -21,20 +21,20 @@
         <div class="modal" id="displayForm">
             <form class="modal-content">
                 <div class="container">
-                    <label class="lbl">Priority :</label>
+                    <label for = "priority" class="lbl">Priority :</label>
                     <select class="pr-dpdn" name="priority" id="priority">
                         <option value="p1">P1</option>
                         <option value="p2">P2</option>
                         <option value="p3">P3</option>
                     </select>
 
-                    <label class="lbl">ToDo :</label>
+                    <label for = "toDoText" class="lbl">ToDo :</label>
                     <input class="tsk-txt" type="text" placeholder="Enter ToDo Task" name="todo" id="toDoText" />
-                    <label class="lbl">End Date :</label>
+                    <label for = "date" class="lbl">End Date :</label>
                     <input class="tsk-dt" type="date" placeholder="End Date" name="end-date" id="date" />
                 </div>
                 <div class="cancel-add-btn-area">
-                    <button class="cancel-add-btns" type="button" onclick="toDoForm('cancel')" class="cancelBtn">Cancel</button>
+                    <button class="cancel-add-btns" onclick="toDoForm('cancel')" type="button"  class="cancelBtn">Cancel</button>
                     <button class="cancel-add-btns" onclick="addRow('toDoTable')" type="button" class="addToDo">Add</button>
                 </div>
 
@@ -42,7 +42,7 @@
         </div>
         <div class="todo-content">
             <div class="todo-txt">
-                <span>List of Todo Activities</span>
+                <h2>List of Todo Activities</h2>
             </div>
             <div class="todo-table-content">
                 <table class="todo-table" width=90% border="1" cellpadding="5" style="text-align: center"
@@ -58,11 +58,11 @@
                 </table>
             </div>
             <div class="todo-delete-all">
-                <button class="btn-deleteAll" onclick="deleteAll('toDoTable')" aria-label="Delete" type="submit"
+                <button class="btn-deleteAll" onclick="deleteAll('toDoTable')" aria-label="Delete " type="submit"
                     id="edit">Delete All</button>
             </div>
         </div>
-    </div>
+    </main>
 </body>
 
 </html>

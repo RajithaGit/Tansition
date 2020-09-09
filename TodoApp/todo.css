@@ -4,6 +4,8 @@
     margin: 0;
     width: 100%;
     overflow-x: hidden;
+    font-style: italic;
+    font-family: fantasy;
   }
   .main {
     padding: 0;
@@ -25,7 +27,7 @@
     font-size: 2.5rem;
     font-style: italic;
     font-family: fantasy;
-    padding: 2% 30% 2% 40%;
+    padding: 1% 30% 4% 40%;
     position: absolute;
   }
   .new-taskbtn-area {
@@ -103,11 +105,11 @@
   }
   .todo-txt {
     height: 35px;
-    font-size: 25px;
+    font-size: 20px;
     font-family: fantasy;
     font-style: italic;
     font-weight: 700;
-    margin: 0 0 0 2%;
+    margin: 0 0 1% 2%;
   }
   .modal {
     display: none;
@@ -159,10 +161,10 @@
       position: relative;
     }
     .txt-header {
-      font-size: 2.5rem;
+      font-size: 2.3rem;
       font-style: italic;
       font-family: fantasy;
-      padding: 3% 30% 2% 30%;
+      padding: 1% 27% 2% 35%;
       position: absolute;
     }
 }
