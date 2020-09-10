@@ -63,7 +63,7 @@ function addRow(tableID) {
   let cell5 = row.insertCell(5);
   let inputTag = document.createElement("div");
   inputTag.innerHTML =
-    "<button aria-label=\"Delete\" class=\"btn-delete\" onClick = \"deleteRow('" +
+    "<button aria-label=\"Delete This Row\" class=\"btn-delete\" onClick = \"deleteRow('" +
     tableID +
     "',id)\" id=" +
     rowId +
