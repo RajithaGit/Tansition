@@ -1,23 +1,64 @@
-import React, { Component } from 'react';
-import './app.css';
-import ReactImage from './react.png';
+import React, { useState } from "react";
+import Delete from "./Delete";
+import Post from "./Post";
+import Put from "./Put";
 
-export default class App extends Component {
-  state = { username: null };
+const App = () => {
+  const [titles, setTitles] = useState(null);
+  const [databaseData, setDatabaseData] = useState(null);
 
-  componentDidMount() {
-    fetch('/api/getUsername')
-      .then(res => res.json())
-      .then(user => this.setState({ username: user.username }));
-  }
+  const getOnClickHandler = () => {
+    // make a get call to /api/preso
+    // with the data returned, use setTitles() to
+    // update state with the data
+    fetch("/api/preso")
+      .then((res) => res.json())
+      .then((response) => setTitles(response));
+  };
 
-  render() {
-    const { username } = this.state;
-    return (
+  const getDatabaseOnClickHandler = () => {
+    // make a get call to /api/preso
+    // with the data returned, use setTitles() to
+    // update state with the data
+    fetch("/api/preso/database")
+      .then((res) => res.json())
+      .then((response) => setDatabaseData(response));
+  };
+
+  return (
+    <main>
+      <button onClick={getOnClickHandler}>
+        Click me to get preso item titles
+      </button>
+      <button onClick={getDatabaseOnClickHandler}>
+        Click me to get what is currently in the database
+      </button>
+      {titles ? (
+        <React.Fragment>
+          <h1>Here are the titles</h1>
+          <ul>
+            {titles.map((title) => (
+              <li key={title}>{title}</li>
+            ))}
+          </ul>
+        </React.Fragment>
+      ) : null}
+      {databaseData ? (
+        <React.Fragment>
+          <h1>Here is what is in the database</h1>
+          {databaseData}
+        </React.Fragment>
+      ) : null}
       <div>
-        {username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
-        <img src={ReactImage} alt="react" />
+        <h1>POST</h1>
+        <Post />
+        <h1>PUT</h1>
+        <Put />
+        <h1>DELETE</h1>
+        <Delete />
       </div>
-    );
-  }
-}
+    </main>
+  );
+};
+
+export default App;
