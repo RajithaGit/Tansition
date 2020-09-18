@@ -8,6 +8,13 @@ const Delete = () => {
     // set the correct headers
     // with the data returned, use setSuccessMessage()
     // to update state with the returned data
+    const sendData = {
+      method: 'DELETE',
+      headers: { 'Content-Type': 'application/json' }
+    };
+    fetch('/api/preso', sendData)
+      .then(response => response.json())
+      .then(data => setSuccessMessage(data));
   };
 
   return (

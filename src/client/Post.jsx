@@ -14,6 +14,14 @@ const Post = () => {
     // set the correct headers
     // with the data returned, use setSuccessMessage()
     // to update state with the returned data
+    const sendData = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ text })
+    };
+    fetch('/api/preso', sendData)
+      .then(response => response.json())
+      .then(data => setSuccessMessage(data));
   };
 
   return (

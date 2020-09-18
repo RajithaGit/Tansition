@@ -11,12 +11,18 @@ const App = () => {
     // make a get call to /api/preso
     // with the data returned, use setTitles() to
     // update state with the data
+    fetch('/api/preso')
+      .then(response => response.json())
+      .then(data => setTitles(data));
   };
 
   const getDatabaseOnClickHandler = () => {
     // make a get call to /api/preso
     // with the data returned, use setTitles() to
     // update state with the data
+    fetch('/api/preso/database')
+      .then(response => response.json())
+      .then(data => setDatabaseData(data));
   };
 
   return (

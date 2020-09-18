@@ -9,13 +9,21 @@ module.exports = {
   // the data returned should be stored on the locals object of the response object
   // under the field, "preso"
   // next should be called at the end
-  fetchPreso: async (req, res, next) => {},
+  fetchPreso: async (req, res, next) => {
+    const apiData = await fetch(presoUrl);
+    const data = await apiData.json();
+    res.locals.preso = data;
+    next();
+  },
 
   // process response should look at the preso field on the locals object
   // it should map over the items in the preso object and return each item's title.
   // The titles array should be set on a field called "titles" on the locals object
   // next should be called at the end
-  processPresoResponse: (req, res, next) => {},
+  processPresoResponse: (req, res, next) => {
+    res.locals.titles = res.locals.preso.items.map(item => item.title);
+    next();
+  },
 
   // this will send to the client, the titles that were on the locals object of the response
   // there is no next as it is not expected to go to another middleware
@@ -27,7 +35,6 @@ module.exports = {
   writeToDatabase: (req, res, next) => {
     // write to the database
     fs.writeFileSync(dbPath, JSON.stringify(res.locals.preso, null, 2));
-
     next();
   },
 
@@ -52,11 +59,17 @@ module.exports = {
   // Using the text from the req.body, set that value onto the preso
   // field of the locals object on the response object
   // call next at the end
-  setUserTextOnLocalsObject: (req, res, next) => {},
+  setUserTextOnLocalsObject: (req, res, next) => {
+    res.locals.preso = req.body.text;
+    next();
+  },
 
   // modify text should put together the text from the req.body and the value on
   // the db field of the locals object on the response object.
   // That value should be placed on locals object of the response object under the field preso.
   // call next at the end
-  modifyUserTextToDatabase: (req, res, next) => {}
+  modifyUserTextToDatabase: (req, res, next) => {
+    res.locals.preso = `${Object.values(req.body)} ${JSON.parse(fs.readFileSync(dbPath))}`;
+    next();
+  }
 };
