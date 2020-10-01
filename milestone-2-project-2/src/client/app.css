@@ -1,0 +1,94 @@
+body {
+  background-color: rgb(215, 221, 215);
+}
+.nav {
+  color: rgb(28, 75, 21);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: fantasy;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+}
+.navBtns {
+  display: flex;
+  justify-content: center;
+}
+.display-block {
+  display: block;
+}
+.display-none {
+  display: none;
+}
+.navBtn {
+  width: 225px;
+  height: 35px;
+  padding-top: 5px;
+  margin: 0 5% 0 0;
+  font-family: fantasy;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+  background: linear-gradient(rgb(150, 128, 170), rgb(171, 192, 147));
+  border-radius: 11%;
+  text-align: center;
+}
+.btns {
+  width: 125px;
+  height: 27px;
+  margin: 0 1% 1% 0;
+  font-family: fantasy;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+  background: linear-gradient(rgb(150, 128, 170), rgb(171, 192, 147));
+  border-radius: 11%;
+  text-align: center;
+}
+.blogText {
+  text-align: justify;
+}
+.blgContent {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 19px;
+}
+.blgHeader {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+}
+.form {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: center;
+  font-family: fantasy;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+}
+.blogBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.label {
+  font-size: 16px;
+  margin-right: 8px;
+}
+.h3Txt {
+  margin: 15px 15px 5px 0;
+}
+.msg {
+  font-family: fantasy;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 16px;
+}
