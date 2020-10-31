@@ -41,6 +41,17 @@ app.put(
   }
 );
 
+//update blog with like status
+app.put(
+  "/api/like",
+  middleWare.setUserTextOnLocalsObject,
+  middleWare.modifyUserTextToDatabase,
+  middleWare.writeToDatabase,
+  (req, res) => {
+    res.status(200).json("Updated blog successfully");
+  }
+);
+
 // delete all blogs
 app.delete(
   "/api/blog",

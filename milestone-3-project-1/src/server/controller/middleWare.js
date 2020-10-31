@@ -38,7 +38,7 @@ module.exports = {
       if (blog.id === req.body.id) {
         res.locals.blog.posts[count] = req.body;
       }
-      count++;
+      count += 1;
     });
     next();
   },

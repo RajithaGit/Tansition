@@ -26,6 +26,13 @@ const Blog = ({ blog }) => {
   const onClickLikeHandler = (blog) => {
     blog.liked = !blog.liked;
     setModifyBlog(blog);
+
+    const sendData = {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(blog)
+    };
+    fetch("/api/blog", sendData).then((response) => response.json());
   };
 
   return (
@@ -33,7 +40,6 @@ const Blog = ({ blog }) => {
       <div>
         <div className="blgContent">
           <div className="blgHeader">
-            {/* <h3 className="h3Txt">{blog.id}</h3> */}
             <h3 className="h3Txt">{blog.header}</h3>
             <Like liked={blog.liked} onClick={() => onClickLikeHandler(blog)} />
           </div>

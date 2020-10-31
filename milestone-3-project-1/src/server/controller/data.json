@@ -5,7 +5,7 @@
       "id": 1001,
       "header": "Technology",
       "text": "The advancement of technology is making our world “flatter.” Friedman is not opposed to this change and is in fact impressed with the new era we have entered into, as well as the positive aspects of technology. On the other hand, Wendell Berry’s Why I am Not Going to Buy a Computer shows the other side of technology, and would not agree with many of the points Friedman brought up. Berry suggests that computers are not necessary and demonstrates the negative aspects of technology.",
-      "liked": true
+      "liked": false
     },
     {
       "id": 1002,
@@ -23,7 +23,7 @@
       "id": 1004,
       "header": "The Impact of College Education",
       "text": "Is college really worth it? By now, we’ve all heard the cautionary tales of college grads who claim their degrees weren’t worth the time or money. The concern is valid, especially as the cost of tuition continues to increase across the nation. Plenty of evidence, however, shows that going to college is a worthwhile investment. With careful planning, getting a degree can be the first step toward a promising future.\n\nFor many graduates, a college degree is key to achieving success in the workforce. While it’s true that the average cost of college continues to increase, the wages of Americans without a degree are simultaneously decreasing. Nearly 23% of African Americans, age 25 or older, hold a bachelor’s degree or higher, compared to the national rate of 33%.",
-      "liked": true
+      "liked": false
     }
   ]
 }
