@@ -1,0 +1,29 @@
+{
+  "idCounter": 1004,
+  "posts": [
+    {
+      "id": 1001,
+      "header": "Technology",
+      "text": "The advancement of technology is making our world “flatter.” Friedman is not opposed to this change and is in fact impressed with the new era we have entered into, as well as the positive aspects of technology. On the other hand, Wendell Berry’s Why I am Not Going to Buy a Computer shows the other side of technology, and would not agree with many of the points Friedman brought up. Berry suggests that computers are not necessary and demonstrates the negative aspects of technology.",
+      "liked": true
+    },
+    {
+      "id": 1002,
+      "header": "Space Tourism",
+      "text": "Space tourism is human space travel for recreational purposes.There are several different types of space tourism, including orbital, suborbital and lunar space tourism. To date, orbital space tourism has been performed only by the Russian Space Agency. Work also continues towards developing suborbital space tourism vehicles. This is being done by aerospace companies like Blue Origin and Virgin Galactic. In addition, SpaceX (an aerospace manufacturer) announced in 2018 that they are planning on sending space tourists, including Yusaku Maezawa, on a free-return trajectory around the Moon on the Starship.During the period from 2001 to 2009, 7 space tourists made 8 space flights aboard a Russian Soyuz spacecraft brokered by Space Adventures to the International Space Station. The publicized price was in the range of US$20–25 million per trip. Some space tourists have signed contracts with third parties to conduct certain research activities while in orbit. By 2007, space tourism was thought to be one of the earliest markets that would emerge for commercial spaceflight.Space Adventures is the only company that has sent paying passengers to space.",
+      "liked": false
+    },
+    {
+      "id": 1003,
+      "header": "Medical Technology",
+      "text": "Medical technology is a broad field where innovation plays a crucial role in sustaining health. Areas like biotechnology, pharmaceuticals, information technology, the development of medical devices and equipment, and more have all made significant contributions to improving the health of people all around the world.",
+      "liked": false
+    },
+    {
+      "id": 1004,
+      "header": "The Impact of College Education",
+      "text": "Is college really worth it? By now, we’ve all heard the cautionary tales of college grads who claim their degrees weren’t worth the time or money. The concern is valid, especially as the cost of tuition continues to increase across the nation. Plenty of evidence, however, shows that going to college is a worthwhile investment. With careful planning, getting a degree can be the first step toward a promising future.\n\nFor many graduates, a college degree is key to achieving success in the workforce. While it’s true that the average cost of college continues to increase, the wages of Americans without a degree are simultaneously decreasing. Nearly 23% of African Americans, age 25 or older, hold a bachelor’s degree or higher, compared to the national rate of 33%.",
+      "liked": true
+    }
+  ]
+}
